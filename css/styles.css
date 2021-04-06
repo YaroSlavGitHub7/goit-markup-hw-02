@@ -1,0 +1,39 @@
+/* основной цвет текста color: #212121 */ 
+/* вторичный цвет текста #757575 */
+/* акцент-цвет синий текста #2196F3 */
+/* акцент-цвет белый текста #FFFFFF */
+/* основной цвет фона background: #FFFFFF */
+/* вторичный цвет фона background: #F5F4FA*/
+/* вторичный акцент цвет фона (кнопка) background: #2196F3*/
+/* цвет фона хедер background: #FFFFFF */
+/* цвет фона футер background: #2F303A */
+body {
+    background: #FFFFFF ;
+    color: #212121
+}
+#team {
+    background: #F5F4FA
+}
+.blue-text {
+    color:#2196F3 ;
+}
+.white-text {
+   color: #FFFFFF ;
+}
+.blue-background {
+    background: #2196F3 ;
+}
+.grey-background {
+    background: #F5F4FA ;
+}
+.list {
+    list-style: none;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+    color: #212121;
+  }
+  
+
