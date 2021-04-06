@@ -4,24 +4,46 @@
 /* акцент-цвет белый текста #FFFFFF */
 /* основной цвет фона background: #FFFFFF */
 /* вторичный цвет фона background: #F5F4FA*/
-/* вторичный акцент цвет фона (кнопка) background: #2196F3*/
+/* вторичный акцент-цвет фона синий (кнопка) background: #2196F3*/
 /* цвет фона хедер background: #FFFFFF */
 /* цвет фона футер background: #2F303A */
+/* цвет текста футер color: rgba(255, 255, 255, 0.6) */
+
+:root {
+    --brand-color: #FFFFFF;
+    --object-color: #2196F3 ;
+}
 body {
-    background: #FFFFFF ;
+    background: var(--brand-color) ;
     color: #212121
 }
+header {
+    background: #FFFFFF;
+}
+footer{
+    background: #2F303A;
+    }
 #team {
     background: #F5F4FA
 }
 .blue-text {
-    color:#2196F3 ;
+    color:var(--object-color) ;
 }
 .white-text {
-   color: #FFFFFF ;
+    color: var(--brand-color) ;
 }
+.grey-text a {
+    color: #757575 ;
+}
+.footer-text {
+    font-style: normal;   
+}
+.footer-grey-txt {
+    color: rgba(255, 255, 255, 0.6);
+}
+
 .blue-background {
-    background: #2196F3 ;
+    background: var(--object-color) ;
 }
 .grey-background {
     background: #F5F4FA ;
@@ -29,7 +51,6 @@ body {
 .list {
     list-style: none;
 }
-
 a {
     outline: none;
     text-decoration: none;
