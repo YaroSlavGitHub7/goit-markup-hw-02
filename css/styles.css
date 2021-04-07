@@ -1,7 +1,7 @@
 /* основной цвет текста color: #212121 */ 
 /* вторичный цвет текста #757575 */
 /* акцент-цвет синий текста #2196F3 */
-/* акцент-цвет белый текста #FFFFFF */
+/* акцент-цвет белый текст #FFFFFF */
 /* основной цвет фона background: #FFFFFF */
 /* вторичный цвет фона background: #F5F4FA*/
 /* вторичный акцент-цвет фона синий (кнопка) background: #2196F3*/
@@ -9,28 +9,51 @@
 /* цвет фона футер background: #2F303A */
 /* цвет текста футер color: rgba(255, 255, 255, 0.6) */
 
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/raleway-v19-latin_cyrillic/raleway-v19-latin_cyrillic-700.woff) format("woff"),
+      url(../fonts/raleway-v19-latin_cyrillic/raleway-v19-latin_cyrillic-700.woff2) format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+.logo-font {
+    font-family:"Raleway", sans-serif;
+    font-size: 26px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
 :root {
-    --brand-color: #FFFFFF;
+    --brand-color: #FFFFFF ;
     --object-color: #2196F3 ;
+    --dark-bg: #2F303A ;
+    --main-font: "Roboto",  sans-serif;
 }
 body {
     background: var(--brand-color) ;
-    color: #212121
+    color: #212121;
+    font-family: var(--main-font)
+
 }
 header {
     background: #FFFFFF;
 }
 footer{
-    background: #2F303A;
+    background: var(--dark-bg);
     }
 #team {
     background: #F5F4FA
 }
-.blue-text {
-    color:var(--object-color) ;
+
+.link:hover,
+.link:focus {
+  color: var(--object-color);
 }
+
+
 .white-text {
     color: var(--brand-color) ;
+    background: var(--dark-bg);
 }
 .grey-text a {
     color: #757575 ;
@@ -56,5 +79,7 @@ a {
     text-decoration: none;
     color: #212121;
   }
-  
+ button {
+    cursor: pointer;
+ } 
 
